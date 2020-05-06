@@ -5,9 +5,9 @@
 				<image class="logo" src="../../static/logo-B.png"></image>
 			</view>
 			<view class="font14 ml10 inputText">输入账号名称</view>
-		    <uinput class="inputStyle" v-model="test" ></uinput>
+		    <uinput class="inputStyle" v-model="test" placeholder="请输入账号名称"></uinput>
 			<view class="font14 ml10 inputText">输入密码</view>
-			<uinput class="inputStyle"  @getValue="v" type="msgcode" :send="true" ></uinput>
+			<uinput class="inputStyle"  @getValue="v" type="msgcode" :send="true" placeholder="请输入密码"></uinput>
 			
 			<!-- <view class="font14 ml10 inputText">输入密码</view>
 		    <uinput class="inputStyle"  @getValue="v" type="tel" ></uinput>
