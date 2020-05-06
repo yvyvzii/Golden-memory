@@ -1,6 +1,6 @@
 <template>
 	<view>
-		denglu
+		
 	</view>
 </template>
 

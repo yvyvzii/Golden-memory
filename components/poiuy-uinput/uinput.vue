@@ -265,7 +265,7 @@
 		color: #707070;
 		background-color:  #e8e8e8;
 		box-sizing: border-box;
-		margin-bottom: 40rpx;
+		// margin-bottom: 20rpx;
 	}
 
 	// .standard:hover,
@@ -442,14 +442,5 @@
 		/* 多行垂直起点在下沿*/
 		display: flex;
 		flex-direction: column-reverse;
-	}
-	.botton1{
-		
-		/* padding-left: 100rpx; */
-		height: 88rpx;
-		width: 520rpx;
-		background-color: #98e9d5;
-		line-height: 88rpx;
-		text-align: center;
 	}
 </style>

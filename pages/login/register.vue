@@ -2,13 +2,13 @@
 	<view class="box">
 		 <form>
 			<view class="font14 ml10 inputText">输入账号名称</view>
-		    <uinput class="inputStyle" v-model="test"  placeholder="输入账号名称"></uinput>
+		    <uinput class="inputStyle" v-model="test" ></uinput>
 			<view class="font14 ml10 inputText">输入手机号</view>
-		    <uinput   @getValue="v" type="tel" placeholder="请输入手机号"></uinput>
+		    <uinput class="inputStyle"  @getValue="v" type="tel" ></uinput>
 			<view class="font14 ml10 inputText">输入验证码</view>
-		    <uinput   @getValue="v" type="msgcode" :send="true" placeholder="请输入验证码"></uinput>
+		    <uinput class="inputStyle"  @getValue="v" type="msgcode" :send="true" ></uinput>
 		    <view class="bottonBox">
-				<button @click="submit" class="button1 mini-btn">注册</button>
+				<button @click="submit" class="button1">注册</button>
 			</view>
 		</form>
 	</view>
@@ -54,9 +54,11 @@
 	.inputText{
 		font-size: 36rpx;	
 		margin-left: 150rpx;
+
 	}
 	.inputStyle{
 		color: #e8e8e8;
+		margin-top: -30rpx;
 	}
 /* 	.buttonBox{
 		height: 88px;
@@ -65,12 +67,13 @@
 	.button1{
 		border: none;
 		margin-left: 170rpx;
-		margin-top: 100rpx;
+		margin-top: 180rpx;
 		height: 88rpx;
 		width: 520rpx;
 		background-color: #98e9d5;
 		line-height: 88rpx;
 		text-align: center;
 		font-size: 40rpx;
+		color: #FFFFFF;
 	}
 </style>
