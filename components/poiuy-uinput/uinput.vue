@@ -26,6 +26,7 @@
 				<input @focus="getFocus" @input="input" :name="name" class="standard" type="number" :disabled="disabled"
 				 :placeholder="placeholder" @blur="input_blur" maxlength="6" :class="error&&mustFill?'error':error==false?'success':''" />
 				<text @click="getCode" :class="interval?'disabled':''">{{codetext}}</text> </view>
+				
 			<view class="error-tip" v-show="error && mustFill">{{tipMsg}}</view>
 		</view>
 		<view v-if="type=='textarea'&& tlposition !='none'" class="input-view" :class="labelPosition=='top'?'':tlposition=='top'?'flex_y_start':tlposition=='center'?'flex_y_center':tlposition=='bottom'?'flex_y_end':''">

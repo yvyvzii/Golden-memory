@@ -1,6 +1,6 @@
 <template>
 	<view class="box">
-		 <form>
+		<form>
 			<view class="font14 ml10 inputText">输入账号名称</view>
 		    <uinput class="inputStyle" v-model="test" ></uinput>
 			<view class="font14 ml10 inputText">输入手机号</view>
