@@ -6,14 +6,14 @@
 			</view>
 			<view class="font14 ml10 inputText">输入账号名称</view>
 		    <uinput class="inputStyle" v-model="test" ></uinput>
-			<view class="font14 ml10 inputText">输入密码</view>
-			<uinput class="inputStyle"  @getValue="v" type="msgcode" :send="true" ></uinput>
+			<!-- <view class="font14 ml10 inputText">输入验证码</view>
+			<uinput class="inputStyle"  @getValue="v" type="msgcode" :send="true" ></uinput> -->
 			
-			<!-- <view class="font14 ml10 inputText">输入密码</view>
-		    <uinput class="inputStyle"  @getValue="v" type="tel" ></uinput>
+			<view class="font14 ml10 inputText">输入密码</view>
+			<uinput class="inputStyle"  @getValue="v" type="tel" ></uinput>
 			<view class="textBox">
 				<text class="verify">验证码登陆</text>
-			</view> -->
+			</view>
 		    <view class="buttonBox">
 				<button @click="submit" class="button1">注册</button>
 				<button @click="submit" class="button2">登陆</button>
@@ -71,12 +71,12 @@
 	.buttonBox{
 		height: 88px;
 		width: 520px;
-		margin-top: -100rpx;
+		margin-top: -40rpx;
 	}
 	.button1{
 		border: none;
 		margin-left: 170rpx;
-		margin-top: 240rpx;
+		margin-top: 180rpx;
 		height: 88rpx;
 		width: 520rpx;
 		background-color: #98e9d5;
@@ -106,12 +106,13 @@
 		margin: 100rpx 0;
 		margin-left: 360rpx;
 	}
-/* 	.textBox{
-		margin-left: 574rpx;
-		margin-top: -30rpx;
+	.textBox{
+		margin-left: 570rpx;
+		margin-top: -115rpx;
+		
 	}
 	.verify{
 		font-size:28rpx ;
-		color: #98e9d5;
-	} */
+		color: #1FCCA2;
+	}
 </style>

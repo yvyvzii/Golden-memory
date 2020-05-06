@@ -7,12 +7,35 @@
 			// }
 		},
 		{
-			"path": "pages/login/login"
+			"path": "pages/login/login",
+			"style":{
+				"navigationBarTitleText":"登陆",
+				"navigationBarBackgroundColor":"#ffffff",
+				"h5":{
+					"pullToRefresh":{
+						"color":"#8eb9f5"
+					}
+					
+				}
+			}
 		},
 		{
 			"path": "pages/login/register",
 			"style":{
 				"navigationBarTitleText":"注册",
+				"navigationBarBackgroundColor":"#ffffff",
+				"h5":{
+					"pullToRefresh":{
+						"color":"#8eb9f5"
+					}
+					
+				}
+			}
+		},
+		{
+			"path": "pages/login/Validate",
+			"style":{
+				"navigationBarTitleText":"验证码登陆",
 				"navigationBarBackgroundColor":"#ffffff",
 				"h5":{
 					"pullToRefresh":{
@@ -30,3 +53,4 @@
 		"backgroundColor": "#F8F8F8"
 	}
 }
+
