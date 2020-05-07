@@ -2,10 +2,10 @@
   <view>
     <view class="person-head">
       <!-- <cmd-avatar class="imageSize" src="https://avatar.bbs.miui.com/images/noavatar_small.gif" @click="fnInfoWin" size="lg" :make="{'background-color': '#fff'}"></cmd-avatar> -->
-      <cover-image class="imageSize" @click="fnInfoWin" size="lg" :make="{'background-color': '#fff'}" src="../../static/photo.png"></cover-image>
+      <cover-image class="imageSize" @click="fnInfoWin" size="lg" :make="{'background-color': '#fff'}" v-bind:src="imgUrl"></cover-image>
       <view class="person-head-box">
-        <view class="person-head-nickname">Slimmer</view>
-        <view class="person-head-username">ID：slimmer9501</view>
+        <view class="person-head-nickname" >{{title}}</view>
+        <view class="person-head-username">ID：{{idName}}</view>
 		<text class="person-text person-margin-top">个人简介:</text>
 	    <text class="person-text">家族简介:</text>
       </view>
@@ -18,6 +18,7 @@
 			<text class="icon-text1">去别人家看看</text>
 		</image>
 		<image class="icon-right-1" src="../../static/chevron-right.png" mode=""></image>
+		<!-- <cover-image class="icon-right-1" @click="fnInfoWin" size="lg" :make="{'background-color': '#fff'}" src="../../static/chevron-right.png"></cover-image> -->
 	</view>
 	<!-- 个人空间 -->
 	<view class="icon-left">
@@ -77,7 +78,11 @@
       cmdIcon
     },
     data() {
-      return {};
+      return {
+		   title: 'Hello',
+		   idName:'123456',
+		   imgUrl:'../../static/photo.png'
+	  };
     },
     methods: {
       /**
@@ -210,7 +215,7 @@
 	.icon-right-5{
 		height: 36rpx;
 		width: 36rpx;
-		margin-left: 514rpx;
+		margin-left: 512rpx;
 		
 	}
 </style>
