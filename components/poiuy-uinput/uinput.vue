@@ -331,7 +331,7 @@
 		right: 21.7391upx;
 		color:#1FCCA2;
 		padding-left: 21.7391upx;
-		margin-top: 100upx;
+		margin-top: 80upx;
 		// padding-right: 4rpx;
 		padding: 0 20rpx;
 	}

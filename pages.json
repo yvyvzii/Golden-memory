@@ -9,8 +9,11 @@
 		{
 			"path": "pages/login/login",
 			"style":{
-				"navigationBarTitleText":"登陆",
+				// "navigationBarTitleText":"登陆",
 				"navigationBarBackgroundColor":"#ffffff",
+				
+				"navigationStyle":"custom",
+				
 				"h5":{
 					"pullToRefresh":{
 						"color":"#8eb9f5"
@@ -22,8 +25,9 @@
 		{
 			"path": "pages/login/register",
 			"style":{
-				"navigationBarTitleText":"注册",
+				// "navigationBarTitleText":"注册",
 				"navigationBarBackgroundColor":"#ffffff",
+				"navigationStyle":"custom",
 				"h5":{
 					"pullToRefresh":{
 						"color":"#8eb9f5"
@@ -35,8 +39,9 @@
 		{
 			"path": "pages/login/Validate",
 			"style":{
-				"navigationBarTitleText":"验证码登陆",
+				// "navigationBarTitleText":"验证码登陆",
 				"navigationBarBackgroundColor":"#ffffff",
+				"navigationStyle":"custom",
 				"h5":{
 					"pullToRefresh":{
 						"color":"#8eb9f5"
@@ -48,8 +53,9 @@
 		{
 			"path":"pages/mine/person",
 			"style":{
-				"navigationBarTitleText":"我的",
+				// "navigationBarTitleText":"我的",
 				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationStyle":"custom",
 				"h5":{
 					"pullToRefresh":{
 						"color":"#8eb9f5"
@@ -58,23 +64,11 @@
 				}
 			}
 		},
-		// {
-		// 	"path":"pages/mine/center",
-		// 	"style":{
-		// 		"navigationBarTitleText":"中心",
-		// 		"navigationBarBackgroundColor":"#FFFFFF",
-		// 		"h5":{
-		// 			"pullToRefresh":{
-		// 				"color":"#8eb9f5"
-		// 			}
-					
-		// 		}
-		// 	}
-		// },
+		
 		{
 			"path":"pages/message/message",
 			"style":{
-				"navigationBarTitleText":"信息",
+				// "navigationBarTitleText":"信息",
 				"navigationBarBackgroundColor":"#98e9d5",
 				"h5":{
 					"pullToRefresh":{

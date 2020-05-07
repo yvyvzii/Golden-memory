@@ -17,7 +17,7 @@
 		<image class="icon-left-1" src="../../static/去别人家看看.png" mode="">
 			<text class="icon-text1">去别人家看看</text>
 		</image>
-		<image class="icon-right-1" src="../../static/chevron-right.png" mode=""></image>
+		<image class="icon-right-1" v-bind:src="chevronRight" mode=""></image>
 		<!-- <cover-image class="icon-right-1" @click="fnInfoWin" size="lg" :make="{'background-color': '#fff'}" src="../../static/chevron-right.png"></cover-image> -->
 	</view>
 	<!-- 个人空间 -->
@@ -25,44 +25,31 @@
 		<image class="icon-left-1" src="../../static/个人空间.png" mode="">
 			<text class="icon-text1">个人空间</text>
 		</image>
-		<image class="icon-right-2" src="../../static/chevron-right.png" mode=""></image>
+		<image class="icon-right-2" v-bind:src="chevronRight" mode=""></image>
 	</view>
 	<!-- 钱包管理 -->
 	<view class="icon-left">
 		<image class="icon-left-3" src="../../static/wallet.png" mode="">
 			<text class="icon-text1">钱包管理</text>
 		</image>
-		<image class="icon-right-3" src="../../static/chevron-right.png" mode=""></image>
+		<image class="icon-right-3" v-bind:src="chevronRight" mode=""></image>
 	</view>
 	<!-- 显示隐藏 -->
 	<view class="icon-left">
 		<image class="icon-left-4" src="../../static/编组.png" mode="">
 			<text class="icon-text1">显示隐藏</text>
 		</image>
-		<image class="icon-right-4" src="../../static/chevron-right.png" mode=""></image>
+		<image class="icon-right-4" v-bind:src="chevronRight" mode=""></image>
 	</view>
 	<!-- 设置 -->
 	<view class="icon-left" style="border: none ;">
 		<image class="icon-left-5" src="../../static/setting.png" mode="">
 			<text class="icon-text1">设置</text>
 		</image>
-		<image class="icon-right-5" src="../../static/chevron-right.png" mode=""></image>
+		<image class="icon-right-5" v-bind:src="chevronRight" mode=""></image>
 	</view>
 	</view>
-    <!-- <view class="person-list">
-      <cmd-cell-item title="去别人家看看" slot-left arrow>
-        <cmd-icon type="bullet-list" size="24" color="#368dff"></cmd-icon>
-      </cmd-cell-item>
-      <cmd-cell-item title="消息通知" slot-left arrow>
-        <cmd-icon type="message" size="24" color="#368dff"></cmd-icon>
-      </cmd-cell-item>
-      <cmd-cell-item title="系统设置" slot-left arrow>
-        <cmd-icon type="settings" size="24" color="#368dff"></cmd-icon>
-      </cmd-cell-item>
-      <cmd-cell-item title="检查版本" addon="v1.0" slot-left arrow>
-        <cmd-icon type="alert-circle" size="24" color="#368dff"></cmd-icon>
-      </cmd-cell-item>
-    </view> -->
+ 
   </view>
 </template>
 
@@ -81,7 +68,8 @@
       return {
 		   title: 'Hello',
 		   idName:'123456',
-		   imgUrl:'../../static/photo.png'
+		   imgUrl:'../../static/moren.png',
+		   chevronRight:'../../static/更多.png'
 	  };
     },
     methods: {
@@ -135,6 +123,8 @@
 	  height:120rpx ;
 	  width: 120rpx;
 	  margin-left: 40rpx;
+	  border-radius: 120rpx;
+	  background-color: #FFFFFF;
   }
 	.person-text{
 		font-size: 24rpx;
@@ -146,7 +136,7 @@
 	.image-size{
 		height: 48rpx;
 		width: 48rpx;
-		margin-left: 280rpx;
+		margin-left: 360rpx;
 		margin-top: -74rpx;
 	}
 	/* .icon-box{
