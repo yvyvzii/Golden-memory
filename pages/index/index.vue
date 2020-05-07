@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
 	<view class="content">
 		<image class="logo" src="/static/logo.png"></image>
 		<view class="text-area">
@@ -50,3 +50,5 @@
 		color: #8f8f94;
 	}
 </style>
+ -->
+ 

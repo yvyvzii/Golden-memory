@@ -44,13 +44,96 @@
 					
 				}
 			}
+		},
+		{
+			"path":"pages/mine/person",
+			"style":{
+				"navigationBarTitleText":"我的",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"h5":{
+					"pullToRefresh":{
+						"color":"#8eb9f5"
+					}
+					
+				}
+			}
+		},
+		// {
+		// 	"path":"pages/mine/center",
+		// 	"style":{
+		// 		"navigationBarTitleText":"中心",
+		// 		"navigationBarBackgroundColor":"#FFFFFF",
+		// 		"h5":{
+		// 			"pullToRefresh":{
+		// 				"color":"#8eb9f5"
+		// 			}
+					
+		// 		}
+		// 	}
+		// },
+		{
+			"path":"pages/message/message",
+			"style":{
+				"navigationBarTitleText":"信息",
+				"navigationBarBackgroundColor":"#98e9d5",
+				"h5":{
+					"pullToRefresh":{
+						"color":"#8eb9f5"
+					}
+					
+				}
+			}
+		},
+		{
+			"path":"pages/news/news",
+			"style":{
+				"navigationBarTitleText":"公众",
+				"navigationBarBackgroundColor":"#98e9d5",
+				"h5":{
+					"pullToRefresh":{
+						"color":"#8eb9f5"
+					}
+					
+				}
+			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "黄金记忆",
+		// "navigationBarTitleText": "黄金记忆",
 		"navigationBarBackgroundColor": "#98e9d5",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"color":"#999999",
+		"selectedColor":"#1FCCA2",
+		"backgroundColor":"#ffffff",
+		"list":[
+			{
+				"text":"首页",
+				"pagePath":"pages/index/index",
+				"iconPath":"static/home-gray.png",
+				"selectedIconPath":"static/home-cyan.png"
+			},
+			{
+				"text":"信息",
+				"pagePath":"pages/message/message",
+				"iconPath":"static/inf-gray备份.png",
+				"selectedIconPath":"static/inf-cyan.png"
+			},
+			{
+				"text":"公众",
+				"pagePath":"pages/news/news",
+				"iconPath":"static/globle-gray备份.png",
+				"selectedIconPath":"static/globle-cyan.png"
+			},
+			{
+				"text":"我的",
+				"pagePath":"pages/mine/person",
+				"iconPath":"static/user-gray.png",
+				"selectedIconPath":"static/user-cyan.png"
+			}
+		]
 	}
 }
 
