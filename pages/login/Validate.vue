@@ -12,7 +12,12 @@
 			<view class="font14 ml10 inputText">输入密码</view>
 			<uinput class="inputStyle"  @getValue="v" type="tel" placeholder="请输入密码"></uinput>
 			<view class="textBox">
-				<text class="verify">验证码登陆</text>
+				<text class="verify" >验证码登陆</text>
+				<!-- <view class="update-input">
+					<input class="uni-input" maxlength="6" type="number" placeholder="" />
+					<input class="code" @click="getVerification" v-model="code" disabled>
+				</view> -->
+
 			</view>
 		    <view class="buttonBox">
 				<button @click="submit" class="button1">注册</button>
@@ -28,25 +33,50 @@
 	        components: {
 	            uinput
 	        },
+			
 	        data(){
+			
 	            return{
 	                // test:'测试数据',
 	                test2:'输入框2的数据',
-	                pass:true
+	                pass:true,
+					code:"获取验证码"
 	            }
-	        },method:{
+	        },
+			method:{
+				// getVerification(){
+				// 				if(this.code!="获取验证码"){
+				// 					uni.showToast({
+				// 						title:'请稍后再试',
+				// 						icon:"none"
+				// 					})
+				// 				}else{
+				// 					this.code=60;
+				// 					var jian=setInterval(()=>{
+				// 						this.code--
+				// 						if(this.code==0){
+				// 							clearInterval(jian)
+				// 							this.code="获取验证码"
+				// 						}
+				// 					},1000)   
+				// 				}   
+				// 			}
+				// 			,
 	            v(e){
 	                if(!pass){
 	                    pass = false;
 	                    return;
 	                }
 	            },
+				
 	            submit(){
 	                if(!pass){
 	                    return;
 	                }
 	            }
-	        }
+				
+			}
+			
 	    }
 </script>
 
@@ -115,4 +145,7 @@
 		font-size:28rpx ;
 		color: #1FCCA2;
 	}
+/* 	.update-input{
+		
+	} */
 </style>

@@ -1,0 +1,63 @@
+
+.box{
+	width: 100%;
+	height: 100%;
+	margin-top:118rpx ;
+	margin-right: 60rpx;
+	margin-left: -60rpx;
+}
+.inputText{
+	font-size: 36rpx;	
+	margin-left: 150rpx;
+}
+.inputStyle{
+	color: #e8e8e8;
+	margin-top: -30rpx;
+}
+.buttonBox{
+	height: 88px;
+	width: 520px;
+	margin-top: -40rpx;
+}
+.button1{
+	border: none;
+	margin-left: 170rpx;
+	margin-top: 180rpx;
+	height: 88rpx;
+	width: 520rpx;
+	background-color: #98e9d5;
+	line-height: 88rpx;
+	text-align: center;
+	font-size: 40rpx;
+	color: #FFFFFF;
+}
+.button2{
+	border: none;
+	margin-left: 170rpx;
+	margin-top: 40rpx;
+	height: 88rpx;
+	width: 520rpx;
+	background-color: #98e9d5;
+	line-height: 88rpx;
+	text-align: center;
+	font-size: 40rpx;
+	color: #FFFFFF;
+}
+.imgBox{
+	margin-top: -100rpx;
+}
+.logo{
+	height: 144rpx;
+	width: 144rpx;
+	margin: 100rpx 0;
+	margin-left: 360rpx;
+}
+.textBox{
+	margin-left: 570rpx;
+	margin-top: -115rpx;
+}
+.verify{
+	font-size:28rpx ;
+	color: #1FCCA2;
+}
+

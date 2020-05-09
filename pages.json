@@ -2,26 +2,24 @@
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/index/index"
-			// "style": {
-			// 	"navigationBarTitleText": "uni-app"
-			// }
 		},
-		{
-			"path": "pages/login/login",
-			"style":{
-				// "navigationBarTitleText":"登陆",
-				"navigationBarBackgroundColor":"#ffffff",
+		//登陆页
+		// {
+		// 	"path": "pages/login/login",
+		// 	"style":{
+		// 		// "navigationBarTitleText":"登陆",
+		// 		"navigationBarBackgroundColor":"#ffffff",
 				
-				"navigationStyle":"custom",
+		// 		"navigationStyle":"custom",
 				
-				"h5":{
-					"pullToRefresh":{
-						"color":"#8eb9f5"
-					}
+		// 		"h5":{
+		// 			"pullToRefresh":{
+		// 				"color":"#8eb9f5"
+		// 			}
 					
-				}
-			}
-		},
+		// 		}
+		// 	}
+		// },
 		{
 			"path": "pages/login/register",
 			"style":{
@@ -38,7 +36,7 @@
 		},
 		{
 			"path": "pages/login/Validate",
-			"style":{
+			"style":{ 
 				// "navigationBarTitleText":"验证码登陆",
 				"navigationBarBackgroundColor":"#ffffff",
 				"navigationStyle":"custom",
@@ -50,6 +48,7 @@
 				}
 			}
 		},
+		
 		{
 			"path":"pages/mine/person",
 			"style":{
@@ -64,11 +63,51 @@
 				}
 			}
 		},
-		
 		{
-			"path":"pages/message/message",
+			"path":"pages/edit/index",
+			"style":{
+				"navigationBarTitleText":"编辑",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationStyle":"custom",
+				"h5":{
+					"pullToRefresh":{
+						"color":"#8eb9f5"
+					}
+					
+				}
+			}
+		},
+		{
+			"path":"pages/mine/message/message",
+			"style":{
+				// "navigationBarTitleText":"个人信息",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				// "navigationStyle":"custom",
+				"h5":{
+					"pullToRefresh":{
+						"color":"#8eb9f5"
+					}
+					
+				}
+			}
+		},
+		{
+			"path":"pages/mine/message/index",
 			"style":{
 				// "navigationBarTitleText":"信息",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"h5":{
+					"pullToRefresh":{
+						"color":"#8eb9f5"
+					}
+					
+				}
+			}
+		},
+		{
+			"path":"pages/mine/message/upload",
+			"style":{
+				"navigationBarTitleText":"上传",
 				"navigationBarBackgroundColor":"#98e9d5",
 				"h5":{
 					"pullToRefresh":{

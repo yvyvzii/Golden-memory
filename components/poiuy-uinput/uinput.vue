@@ -25,6 +25,7 @@
 			<view v-if="type == 'msgcode'" class="msgcode flex_y_center">
 				<input @focus="getFocus" @input="input" :name="name" class="standard" type="number" :disabled="disabled"
 				 :placeholder="placeholder" @blur="input_blur" maxlength="6" :class="error&&mustFill?'error':error==false?'success':''" />
+				<!-- 验证码 -->
 				<text @click="getCode" :class="interval?'disabled':''">{{codetext}}</text> </view>
 				<!-- 这里end -->
 			<view class="error-tip" v-show="error && mustFill">{{tipMsg}}</view>

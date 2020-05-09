@@ -68,7 +68,7 @@
       return {
 		   title: 'Hello',
 		   idName:'123456',
-		   imgUrl:'../../static/moren.png',
+		   imgUrl:'../../static/photo.png',//头像
 		   chevronRight:'../../static/更多.png'
 	  };
     },
@@ -154,7 +154,7 @@
 	/* 看看 */
 	.icon-left-1{
 		width: 48rpx;
-		height: 48rpx;
+		height:50rpx;
 	}
 	.icon-right-1{
 		height: 36rpx;
