@@ -21,7 +21,7 @@
 		<!-- <cover-image class="icon-right-1" @click="fnInfoWin" size="lg" :make="{'background-color': '#fff'}" src="../../static/chevron-right.png"></cover-image> -->
 	</view>
 	<!-- 个人空间 -->
-	<view class="icon-left">
+	<view class="icon-left" @click="room">
 		<image class="icon-left-1" src="../../static/个人空间.png" mode="">
 			<text class="icon-text1">个人空间</text>
 		</image>
@@ -81,9 +81,16 @@
 				url: '../../pages/mine/message/index'
 			})
 		},
+		//跳转到去别人家看看
 		see(){
 			uni.navigateTo({
 				url:'../../pages/mine/look/look'
+			})
+		},
+		
+		room(){
+			uni.navigateTo({
+				url:'../../pages/space/space'
 			})
 		},
       /**

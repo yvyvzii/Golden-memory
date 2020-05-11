@@ -133,9 +133,23 @@
 				}
 			}
 		},
-		//我的-去别人家看看
+		//我的-去别人家看看列表页
 		{
 			"path":"pages/mine/look/look",
+			"style":{
+				// "navigationBarTitleText":"去别人家看看",
+				"navigationBarBackgroundColor":"#98e9d5",
+				"h5":{
+					"pullToRefresh":{
+						"color":"#8eb9f5"
+					}
+					
+				}
+			}
+		},
+		//我的-空间
+		{
+			"path":"pages/space/space",
 			"style":{
 				// "navigationBarTitleText":"去别人家看看",
 				"navigationBarBackgroundColor":"#98e9d5",
