@@ -20,6 +20,7 @@
 		// 		}
 		// 	}
 		// },
+		//注册
 		{
 			"path": "pages/login/register",
 			"style":{
@@ -34,6 +35,7 @@
 				}
 			}
 		},
+		//验证码登陆
 		{
 			"path": "pages/login/Validate",
 			"style":{ 
@@ -48,7 +50,7 @@
 				}
 			}
 		},
-		
+		//tabbar我的
 		{
 			"path":"pages/mine/person",
 			"style":{
@@ -63,10 +65,11 @@
 				}
 			}
 		},
+		//富文本编辑器
 		{
 			"path":"pages/edit/index",
 			"style":{
-				"navigationBarTitleText":"编辑",
+				// "navigationBarTitleText":"编辑",
 				"navigationBarBackgroundColor":"#FFFFFF",
 				"navigationStyle":"custom",
 				"h5":{
@@ -77,10 +80,11 @@
 				}
 			}
 		},
+		//tabbar信息
 		{
-			"path":"pages/mine/message/message",
+			"path":"pages/message/message",
 			"style":{
-				// "navigationBarTitleText":"个人信息",
+				// "navigationBarTitleText":"信息",
 				"navigationBarBackgroundColor":"#FFFFFF",
 				// "navigationStyle":"custom",
 				"h5":{
@@ -91,6 +95,7 @@
 				}
 			}
 		},
+		//我的-个人信息
 		{
 			"path":"pages/mine/message/index",
 			"style":{
@@ -104,11 +109,27 @@
 				}
 			}
 		},
+		//我的-照片上传
 		{
 			"path":"pages/mine/message/upload",
 			"style":{
-				"navigationBarTitleText":"上传",
+				// "navigationBarTitleText":"完成",
 				"navigationBarBackgroundColor":"#98e9d5",
+				 "titleNView": {
+					  "buttons": [ //原生标题栏按钮配置,
+						{
+							"text": "完成",//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+							"fontSize": "24rpx",
+							"float":"right",
+							"width":"70rpx"
+						}
+					 ],
+					  "backButton": { //自定义 backButton
+					         // "background": "#00FF00"
+							 
+					                 }
+					        },
+							
 				"h5":{
 					"pullToRefresh":{
 						"color":"#8eb9f5"

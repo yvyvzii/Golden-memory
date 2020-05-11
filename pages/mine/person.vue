@@ -9,7 +9,7 @@
 		<text class="person-text person-margin-top">个人简介:</text>
 	    <text class="person-text">家族简介:</text>
       </view>
-	<image src="../../static/edit.png" mode="" class="image-size"></image>
+		<image @click="skip" src="../../static/edit.png" class="image-size" ></image>
     </view>
 	<view class="icon-box">
 	<!-- 去别人家看看 -->
@@ -73,6 +73,14 @@
 	  };
     },
     methods: {
+		
+		// 跳转到编辑个人信息页
+		skip(){
+			//测试完成之后改成uni.redirectTo
+			uni.navigateTo({
+				url: '../../pages/mine/message/index'
+			})
+		},
       /**
        * 打开用户信息页
        */

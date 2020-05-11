@@ -1,19 +1,19 @@
 <template>
 	<view class="container flex">
-		<view style="text-align: center;">
-			<image class="avatar" @tap="upload"></image>
+		<!-- <navigator url="./message"> -->
+		<view style="text-align: center;" @click="skip">
+			<image class="avatar" @click="skip"></image>
 			<!-- <image src="../../../static/camera.png" class="avatar" @tap="upload"></image> -->
-			<view class="item flex uploadText" @tap="upload">上传头像
-				
-			</view>
+			<view class="item flex uploadText" @click="skip">上传头像</view>
 		</view>
+		<!-- </navigator> -->
 		<view class="box">
 			<text class="textStyle boxSize">姓名：</text>
 			<input class="boxSize" focus="true"></input>
 			<text class="textStyle textSize" space="emsp">ID ：</text>
 			<input class="boxSize" focus="true"></input>
 			<text class="textStyle">性别：
-				<image class="sex " src="../../../static/icon-man-1.png" mode="" @click=""></image>
+				<image class="sex " src="../../../static/icon-man-1.png" mode=""></image>
 				<image class="sex " src="../../../static/icon-woman-1.png"></image>
 			</text>
 		</view>
@@ -38,27 +38,34 @@ export default {
 		 }
 
 	},
-	methods:{
-		upload() {
-			uni.chooseImage({
-				count: 1, // 默认9
-				sizeType: ['compressed'], // 可以指定是原图还是压缩图，默认二者都有
-				sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
-				success(res) {
-					const src = res.tempFilePaths[0];
-		
-					uni.redirectTo({
-						url: '../upload/upload?src=' + src
-					});
-				}
-			});
+	methods:{	
+		skip(){
+			uni.redirectTo({
+				url: './upload'
+			})
 		},
-	},
-	onLoad(option) {
-		let { avatar } = option;
-		if (avatar) {
-			this.src=avatar;
-		}
+		// ,
+	// 	upload() {
+	// 		uni.chooseImage({
+	// 			count: 1, // 默认9
+	// 			sizeType: ['compressed'], // 可以指定是原图还是压缩图，默认二者都有
+	// 			sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+	// 			success(res) {
+	// 				const src = res.tempFilePaths[0];
+		
+	// 				uni.redirectTo({
+	// 					url: '../upload/upload?src=' + src
+	// 				});
+	// 			}
+	// 		});
+	// 	},
+	// },
+	// onLoad(option) {
+	// 	let { avatar } = option;
+	// 	if (avatar) {
+	// 		this.src=avatar;
+	// 	}
+	// }
 	}
 };
 </script>
