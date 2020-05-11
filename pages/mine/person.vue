@@ -13,7 +13,7 @@
     </view>
 	<view class="icon-box">
 	<!-- 去别人家看看 -->
-	<view class="icon-left">
+	<view class="icon-left" @click="see">
 		<image class="icon-left-1" src="../../static/去别人家看看.png" mode="">
 			<text class="icon-text1">去别人家看看</text>
 		</image>
@@ -79,6 +79,11 @@
 			//测试完成之后改成uni.redirectTo
 			uni.navigateTo({
 				url: '../../pages/mine/message/index'
+			})
+		},
+		see(){
+			uni.navigateTo({
+				url:'../../pages/mine/look/look'
 			})
 		},
       /**

@@ -123,13 +123,8 @@
 							"float":"right",
 							"width":"70rpx"
 						}
-					 ],
-					  "backButton": { //自定义 backButton
-					         // "background": "#00FF00"
-							 
-					                 }
-					        },
-							
+					 ]
+				},			
 				"h5":{
 					"pullToRefresh":{
 						"color":"#8eb9f5"
@@ -138,6 +133,21 @@
 				}
 			}
 		},
+		//我的-去别人家看看
+		{
+			"path":"pages/mine/look/look",
+			"style":{
+				// "navigationBarTitleText":"去别人家看看",
+				"navigationBarBackgroundColor":"#98e9d5",
+				"h5":{
+					"pullToRefresh":{
+						"color":"#8eb9f5"
+					}
+					
+				}
+			}
+		},
+		//TabBar公众
 		{
 			"path":"pages/news/news",
 			"style":{
