@@ -21,13 +21,13 @@
 			<view class="tba_contain">
 				<!-- 导航栏 -->
 				<scroll-view class="tab" scroll-x :scroll-left="tabScroll" scroll-with-animation="true">
-					<block v-for="(item,index) in menuList" :key="index">
-						<view :class="['tab-item',currentTab == index ? 'active' : '']" :data-current="index" @click='clickMenu'>{{item.name}}</view>
+					<block v-for="(item,index) in menuList" :key="index" >
+						<view :class="['tab-item','border2',currentTab == index ? 'active' : ''] " :data-current="index"  @click='clickMenu'>{{item.name}}</view>
 					</block>
 				</scroll-view>
 				<!-- 页面 -->
-				<swiper class="list_content" style='height: height px' duration="500" :current="currentTab" @change="changeContent">
-					<swiper-item class="content-item" >
+				<swiper class="list_content"duration="500" :current="currentTab" @change="changeContent">
+					<swiper-item class="content-item">
 						<block v-for="item in list_img">
 							<view class="list_img">
 								<view>{{item.title}}</view>
@@ -119,5 +119,8 @@
 		margin-top: 40rpx;
 		font-size: 24rpx;
 		color: #666;
+	}
+	.fontColor{
+		color: #1FCCA2;
 	}
 </style>
