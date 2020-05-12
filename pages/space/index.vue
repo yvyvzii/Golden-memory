@@ -1,3 +1,5 @@
+
+<!-- 公众消息页 -->
 <template>
 	<view class="content">
 		<!--

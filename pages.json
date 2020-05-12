@@ -147,11 +147,25 @@
 				}
 			}
 		},
-		//我的-空间
+		//我的-别人家的空间
 		{
 			"path":"pages/space/space",
 			"style":{
 				// "navigationBarTitleText":"去别人家看看",
+				"navigationBarBackgroundColor":"#a6eddc",
+				"h5":{
+					"pullToRefresh":{
+						"color":"#8eb9f5"
+					}
+					
+				}
+			}
+		},
+		//我的-个人空间
+		{
+			"path":"pages/space/mine",
+			"style":{
+				// "navigationBarTitleText":"个人空间",
 				"navigationBarBackgroundColor":"#a6eddc",
 				"h5":{
 					"pullToRefresh":{

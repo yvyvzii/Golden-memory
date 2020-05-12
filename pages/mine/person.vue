@@ -90,7 +90,7 @@
 		
 		room(){
 			uni.navigateTo({
-				url:'../../pages/space/space'
+				url:'../../pages/space/mine'
 			})
 		},
       /**

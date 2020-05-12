@@ -1,3 +1,4 @@
+/* space别人家JS*/
 export default {
 	data() {
 		return {
