@@ -1,7 +1,8 @@
 <template>
-  <dragSort :list="list" :props="props" @change="onDragSortChange">
-	  
-  </dragSort>
+  <dragSort :list="list" :props="props" @change="onDragSortChange"></dragSort>
+  <!-- <dragSort v-for="(item,index) in objectArray" :key="item.id" @change="onDragSortChange">
+	 {{index +':'+ item.name}}
+  </dragSort> -->
 </template>
 
 <script>
@@ -14,16 +15,17 @@
 	    return {
 	      // 对应需要显示的标题
 	      props: {
-	        label: 'label'
+	        label: 'label',
+			name:'name'
 	      },
 	      list: [
 	        {
-	          label: '标题1',
-			  // imsge:''
-			  image:'../../../static/去别人家看看/photo_1.png'
+	          label: '妈妈',
+			  name:'11'
 	        },
 	        {
-	          label: '标题2'
+	          label: '标题2',
+			  name:'11'
 	        },
 	        {
 	          label: '标题3'

@@ -152,7 +152,7 @@
 			"path":"pages/space/space",
 			"style":{
 				// "navigationBarTitleText":"去别人家看看",
-				"navigationBarBackgroundColor":"#98e9d5",
+				"navigationBarBackgroundColor":"#a6eddc",
 				"h5":{
 					"pullToRefresh":{
 						"color":"#8eb9f5"
@@ -163,7 +163,7 @@
 		},
 		//TabBar公众
 		{
-			"path":"pages/news/news",
+			"path":"pages/space/index",
 			"style":{
 				"navigationBarTitleText":"公众",
 				"navigationBarBackgroundColor":"#98e9d5",
@@ -201,7 +201,7 @@
 			},
 			{
 				"text":"公众",
-				"pagePath":"pages/news/news",
+				"pagePath":"pages/space/index",
 				"iconPath":"static/globle-gray备份.png",
 				"selectedIconPath":"static/globle-cyan.png"
 			},

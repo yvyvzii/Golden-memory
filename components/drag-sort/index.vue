@@ -12,9 +12,14 @@
     class="drag-sort-item"
     style="height:55px"
     :class="{'active': active === index, 'vh-1px-t': item.index > 0}">
-      <view class="item">{{item[props.label]}}</view>
+     <image class="imageSize" src="../../static/去别人家看看/photo_2.png" mode=""></image>
+	  <view class="item">{{item[props.label]}}
+	  </view>
+	  
       <view class="touch-tight"  @click="seeT">
-        <view class="ico_drag"></view>
+		  
+        <view class="ico_drag">
+		</view>
       </view>
     </movable-view>
     <movable-view
@@ -79,9 +84,9 @@ export default {
   updated () {},
   filters: {},
   methods: {
-	seeT(){
+	see(){
 	  	uni.navigateTo({
-	  		url:'../../pages/index/index'
+	  		url:'../../../pages/space/space'
 	  	})
 	  },
     onUpdateCurrentList () {
@@ -216,5 +221,9 @@ export default {
 .active {
   box-shadow: 0 0 40rpx #DDDDDD;
   z-index: 99;
+}
+.imageSize{
+	height: 48rpx;
+	width: 48rpx;
 }
 </style>
