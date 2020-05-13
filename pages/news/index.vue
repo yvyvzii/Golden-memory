@@ -1,5 +1,7 @@
 <template>
-	<view>news</view>
+	<view>
+		88888
+	</view>
 </template>
 
 <script>

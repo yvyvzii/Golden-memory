@@ -84,8 +84,8 @@
 		{
 			"path":"pages/message/message",
 			"style":{
-				// "navigationBarTitleText":"信息",
-				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTitleText":"信息",
+				"navigationBarBackgroundColor":"#98e9d5",
 				// "navigationStyle":"custom",
 				"h5":{
 					"pullToRefresh":{
@@ -138,13 +138,17 @@
 			"path":"pages/mine/look/look",
 			"style":{
 				// "navigationBarTitleText":"去别人家看看",
-				"navigationBarBackgroundColor":"#98e9d5",
-				"h5":{
-					"pullToRefresh":{
-						"color":"#8eb9f5"
-					}
-					
-				}
+				"navigationBarBackgroundColor":"#98e9d5"
+				// "titleNView":{
+				// 	"buttons":[
+				// 		{
+				// 			"text":"\ue659",
+				// 			"fontSize": "48rpx",
+				// 			"fontSrc":"static/ttf/iconfont"
+				// 			// "fontSrc":"static/ttf/iconfont"
+				// 		}
+				// 	]
+				// }
 			}
 		},
 		//我的-别人家的空间
@@ -177,7 +181,7 @@
 		},
 		//TabBar公众
 		{
-			"path":"pages/space/index",
+			"path":"pages/news/index",
 			"style":{
 				"navigationBarTitleText":"公众",
 				"navigationBarBackgroundColor":"#98e9d5",
@@ -215,7 +219,7 @@
 			},
 			{
 				"text":"公众",
-				"pagePath":"pages/space/index",
+				"pagePath":"pages/news/index",
 				"iconPath":"static/globle-gray备份.png",
 				"selectedIconPath":"static/globle-cyan.png"
 			},

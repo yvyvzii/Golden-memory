@@ -65,7 +65,7 @@
 		button::after{ border: none;}
 		width: 750rpx;
 		height: 530rpx;
-		background-image: url(../../static/去别人家看看/我的-个人信息3-恢复的.png);
+		background-image: url(../../static/lookbig/photo_6.png);
 		.buttonSize{
 			width: 284rpx;
 			height: 64rpx;
@@ -97,7 +97,7 @@
 		margin-left: 160rpx;
 		height: 96rpx;
 		width:96rpx;
-		background: url("../../static/去别人家看看/photo_4.png") no-repeat;
+		background: url("../../static/lookbig/photo_4.png") no-repeat;
 	}
 	.box2{
 		

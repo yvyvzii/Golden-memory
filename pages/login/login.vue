@@ -106,12 +106,5 @@
 		margin: 100rpx 0;
 		margin-left: 360rpx;
 	}
-/* 	.textBox{
-		margin-left: 574rpx;
-		margin-top: -30rpx;
-	}
-	.verify{
-		font-size:28rpx ;
-		color: #98e9d5;
-	} */
+
 </style>

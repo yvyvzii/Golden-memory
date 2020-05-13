@@ -12,7 +12,7 @@
     class="drag-sort-item"
     style="height:55px"
     :class="{'active': active === index, 'vh-1px-t': item.index > 0}">
-     <image class="imageSize" src="../../static/去别人家看看/photo_2.png" mode=""></image>
+     <image class="imageSize" src="../../static/lookbig/photo_2.png" mode=""></image>
 	  <view class="item">{{item[props.label]}}
 	  </view>
 	  
@@ -214,7 +214,7 @@ export default {
   display: inline-block;
   width: 22px;
   height: 24px;
-  background: url(../../static/去别人家看看/log-in.png) no-repeat;
+  background: url(../../static/lookbig/log-in.png) no-repeat;
   /* background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAYCAYAAAC8/X7cAAAAAXNSR0IArs4c6QAAAEtJREFUWAnt1cEJACAMA0B1/506moIr5FEK51+Jl0d2Vd01+JzB2X90H5jeoPwECBDIBLYlzgDj25Y4JvQAAQIERgtY4u76LHF3Aw8rGQnK3sYAXQAAAABJRU5ErkJggg==) 0 0 no-repeat; */
   background-size: 100% auto;
 }

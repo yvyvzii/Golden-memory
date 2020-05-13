@@ -8,7 +8,7 @@
 			<view class="font14 ml10 inputText">输入验证码</view>
 		    <uinput class="inputStyle"  @getValue="v" type="msgcode" :send="true" placeholder="请输入验证码"></uinput>
 		    <view class="bottonBox">
-				<button @click="submit" class="button1">注册</button>
+				<button @click="submit" class="button1">注册并登录</button>
 			</view>
 		</form>
 	</view>

@@ -14,7 +14,7 @@
 	<view class="icon-box">
 	<!-- 去别人家看看 -->
 	<view class="icon-left" @click="see">
-		<image class="icon-left-1" src="../../static/去别人家看看.png" mode="">
+		<image class="icon-left-1" src="../../static/look.png" mode="">
 			<text class="icon-text1">去别人家看看</text>
 		</image>
 		<image class="icon-right-1" v-bind:src="chevronRight" mode=""></image>
@@ -22,7 +22,7 @@
 	</view>
 	<!-- 个人空间 -->
 	<view class="icon-left" @click="room">
-		<image class="icon-left-1" src="../../static/个人空间.png" mode="">
+		<image class="icon-left-1" src="../../static/room.png" mode="">
 			<text class="icon-text1">个人空间</text>
 		</image>
 		<image class="icon-right-2" v-bind:src="chevronRight" mode=""></image>
@@ -36,7 +36,7 @@
 	</view>
 	<!-- 显示隐藏 -->
 	<view class="icon-left">
-		<image class="icon-left-4" src="../../static/编组.png" mode="">
+		<image class="icon-left-4" src="../../static/bianzu.png" mode="">
 			<text class="icon-text1">显示隐藏</text>
 		</image>
 		<image class="icon-right-4" v-bind:src="chevronRight" mode=""></image>

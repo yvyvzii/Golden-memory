@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "947061",
+      "name": "加",
+      "font_class": "jia",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    }
+  ]
+}
